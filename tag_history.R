@@ -66,17 +66,17 @@ plot(question.count$day,
      ylab="πλήθος ερωτήσεων")
 dev.off()
 
-img.file.name <-
-  sprintf("images/tags_in_%d_days.svg",
-          2*window.days+1)
-svg(img.file.name, width=7, height=4)
-plot(question.count$day,
-     question.count$all.tags,
-     type="l",
-     main=sprintf("number of tags\n in a %d day window",2*window.days+1),
-     xlab="date",
-     ylab="number of tags")
-dev.off()
+#img.file.name <-
+#  sprintf("images/tags_in_%d_days.svg",
+#          2*window.days+1)
+#svg(img.file.name, width=7, height=4)
+#plot(question.count$day,
+#     question.count$all.tags,
+#     type="l",
+#     main=sprintf("number of tags\n in a %d day window",2*window.days+1),
+#     xlab="date",
+#     ylab="number of tags")
+#dev.off()
 
 img.file.name <-
   sprintf("images/tag_%s_in_%d_days.svg",
